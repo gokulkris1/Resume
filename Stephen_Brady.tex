@@ -1,0 +1,176 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% The main font used in this template, Adobe Garamond Pro, does not 
+% come with Windows by default. You will need to download it in
+% order to get an output as in the preview PDF. Otherwise, change this 
+% font to one that does come with Windows or comment out the font line 
+% to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+%% Packages für Grafiken & Abbildungen %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} %%Zum Laden von Grafiken
+%\usepackage{subfig} %%Teilabbildungen in einer Abbildung
+%\usepackage{pst-all} %%PSTricks - nicht verwendbar mit pdfLaTeX
+\usepackage{eso-pic} %%Für das Bewerbungsbild
+
+
+%% \defaultfontfeatures{Mapping=tex-text} %%not yet supported in lualatex??
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Adobe Garamond Pro} % Main document font
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\addtolength{\voffset}{-0.5in} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{3cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+%----------------------------------------------------------------------------------------
+% FOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+\cofoot{
+\addfontfeature{LetterSpace=20.0}\fontsize{12}{12}\selectfont % Letter spacing and font size
+
+Old Park {\large\textperiodcentered} Bandon {\large\textperiodcentered} Co. Cork {\large\textperiodcentered} Ireland\\ % Your mailing address
+{\Large\Letter} stephen.mk.brady@gmail.com \ {\Large\Telefon} (083) 192-4882 % Your email address and phone number
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+% HEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{\addfontfeature{LetterSpace=21.0}\fontsize{21}{21}\selectfont\scshape Stephen Brady} % Your name at the top
+
+
+Old Park {\large\textperiodcentered} Bandon {\large\textperiodcentered} Co. Cork {\large\textperiodcentered} Ireland\\ % Your mailing address
+{\Large\Letter} stephen.mk.brady@gmail.com \ {\Large\Telefon} (083) 192-4882 % Your email address and phone number
+
+
+\vspace{0.3cm} % Extra whitespace after the large name at the top
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\section{Objective}
+
+A qualified and experienced test engineer with 3 years commercial manual testing experience and almost 2 years automated testing via python test framework in the telecommunications industry. 
+During this period I have also gained valuable experience in Agile development \\and waterfall SDLC's, and mentoring of others. With both technical and interpersonal skills, looking for a challenging and more technical role that utilises my some of my previous skills and experiences with an emphasis on programming.
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2.3cm}X}
+\gray Period & \textbf{January 2013 --- Present}\\
+\gray Employer & \textbf{Pilz Ireland} \hfill Model Farm Rd. Cork, IE\\
+\gray Job Title & \textbf{Software Test Engineer}\\
+\gray Technologies & \textbf{61131 IL, STL, Ladder logic diagram, Java SE 7,  Google windows tester, HP ALM}\\
+& \textbf{Worked closely with development and test teams, Project Managers, and Requirements Engineers. Carried out Functional, Non-Functional, Performance, Installation and GUI testing.
+Responsible for Software Test strategy and planning. Analyzed and reviewed Requirements and Use Cases. Reviewed Unit Test plans to increase Unit Test coverage. Produced and maintained Test documentation including Plans, Test Cases Test Results and Reports. Delivered Management and Team presentations in the areas of Test Strategies, Test progress, process improvements. Developed Test code (IEC 61131) and rewrote customer and developer test code to improve testability.}
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2.3cm}X}
+\gray Period & \textbf{September 2010 --- June 2012}\\
+\gray Employer & \textbf{Tait Communications} \hfill Christchurch, NZ\\
+\gray Job Title & \textbf{R\&D Test Engineer}\\
+\gray Technologies & \textbf{Python, Bash, Android Java,C\#, WML, GPIB Agilent, Fitnesse, SQL, RS232, Cadsoft Eagle, P25/MPT/Analogue radio systems}\\
+& \textbf{It was my responsibility to design, develop and maintain radio feature regression tests written in python. It was also my responsibility to maintain and upgrade the physical test system while working within Agile Scrum teams. 
+Other responsibilities included testing the PC application software. Manual Exploratory testing of radio and test tool hardware and Software Investigate and organise the hardening of RF immunity in the physical test system. Software and Hardware test tool development. Mentor Summer student to develop an Android application. Fitnesse Test Case development.}
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2.3cm}X}
+\gray Period & \textbf{June 2010 --- September 2010}\\
+\gray Employer & \textbf{Enatel Ltd.} \hfill Christchurch, NZ\\
+\gray Job Title & \textbf{Test Technician \&Assembler}\\
+\gray Technologies & \textbf{RS232, power hardware circuitry}\\
+& \textbf{Responsibilities included assembling rack mounted DC power systems. Building complete prototype/sample/one-off/first in production run systems to specification. Testing systems meticulously and diagnosing faults that occur. Repairing/reworking faulty or damaged parts or systems. Working with the production and design engineers to troubleshoot and solve production issues.}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{2006 --- 2008}\\
+\gray Degree & \textbf{Bachelor of Engineering(Hons.) Degree in Digital and Software Systems Design}\\
+\gray University & \textbf{Galway Mayo Institute of Technology} \hfill Galway, Ireland\\
+%& Extra information about degree
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{2003 --- 2004}\\
+\gray Degree & \textbf{Diploma in Electronic Engineering}\\
+\gray University & \textbf{Galway Mayo Institute of Technology} \hfill Galway, Ireland\\
+%& Extra information about degree
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{2001 --- 2003}\\
+\gray Degree & \textbf{Certificate in Electronic Engineering}\\
+\gray University & \textbf{Galway Mayo Institute of Technology} \hfill Galway, Ireland\\
+%& Extra information about degree
+\end{tabularx}
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages & Java SE7, Python, Android Java, C\#, 61131-3 IL, STL, LD, {\LaTeX} \\
+Protocols \& APIs & RS232, I$^2$C, TCP\/IP, P25, MPT, Analogue CTCSS \& DCS \\
+Databases & MySQL \\
+Tools & SVN, Git, LAMP, JIRA, HP ALM, Rational Clearquest \& DOORS \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\end{center}
+
+\end{document}
